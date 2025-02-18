@@ -1,0 +1,29 @@
+/* Estilo de tabla */
+table {
+    width: 100%; /* Asegurando que ocupa todo el ancho */
+    margin: 20px 0; /* Espaciado superior e inferior */
+    border-collapse: collapse; /* Eliminar espacios entre bordes de celdas */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra para la tabla */
+}
+
+th, td {
+    border: 1px solid #DBE2EF; /* Borde de la tabla */
+    padding: 12px; /* Espaciado interno */
+    text-align: left; /* Alinear texto a la izquierda */
+    transition: background-color 0.3s; /* Transición de fondo al hacer hover */
+}
+
+th {
+    background-color: #9F8383; /* Color de encabezado de tabla */
+    color: #FFFFFF; /* Color del texto en el encabezado */
+    font-weight: 700; /* Negrita para encabezados */
+}
+
+td {
+    background-color: #FFFFFF; /* Color de fondo de celdas */
+}
+
+td:hover {
+    background-color: #FFE3E3; /* Color de hover de celdas */
+}

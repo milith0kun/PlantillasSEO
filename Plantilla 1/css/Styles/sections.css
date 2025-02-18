@@ -1,0 +1,73 @@
+/* Estilos para secciones específicas de la página */
+/* Sección hero/banner principal de la página */
+#main-image {
+    position: relative; /* Permite posicionamiento absoluto de elementos hijos */
+    background-image: url('../../images/lifestyle/FondoDePaginaNutricuionHolistica.png'), 
+                      linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, #F9F7F7 100%);
+    background-color: #2c3e50; /* Color de fondo si la imagen no carga */
+    background-size: cover; /* Cubre todo el contenedor sin distorsión */
+    background-position: center top; /* Enfoca la parte superior central de la imagen */
+    background-repeat: no-repeat; /* Prevenir repetición */
+    
+    height: 93vh; /* Altura del viewport para banner */
+    
+    /* Configuración Flexbox para centrado vertical/horizontal */
+    display: flex;
+    flex-direction: column; /* Apila elementos hijos verticalmente */
+    justify-content: center; /* Centrado vertical */
+    align-items: center; /* Centrado horizontal */
+    
+    color: #FFFFFF; /* Color del texto principal */
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.6); /* Sombra para mejorar legibilidad */ 
+    text-align: center; /* Útil para contenido de texto no flex (párrafos) */
+}
+
+/* Títulos dentro del main-image */
+#main-image h2 {
+    font-size: 3rem; /* Tamaño del título */
+    font-weight: 700; /* Negrita */
+    margin-bottom: 20px; /* Espacio inferior del título */
+    color: #00ADB5; /* Color suave para el título */
+}
+
+/* Sección Intermedia: Bienestar Integral */
+#middle-section {
+    position: relative; /* Permite la superposición */
+    background-color: #3F72AF; /* Color de fondo de la sección intermedia */
+    color: #FFFFFF; /* Color del texto en la sección */
+    padding: 40px 20px; /* Espaciado alrededor de la sección */
+    text-align: center; /* Centramos texto */
+    width: 100%; /* Aseguramos que ocupa el ancho completo */
+    height: 40%; /* Ocupa el 40% del viewport */
+    margin: -20px 0 0 0; /* Posiciona la sección sobre secciones de arriba y abajo */
+    z-index: 3000; /* Asegura que se superponga a otras secciones */
+}
+
+/* Estilos para encabezados en la sección intermedia */
+#middle-section h2 {
+    margin-bottom: 15px; /* Espacio inferior */
+    font-size: 2rem; /* Tamaño del texto */
+    color: #F9F7F7; /* Color claro para los títulos */
+}
+
+/* Estilos para artículos en la sección intermedia */
+#middle-section article {
+    margin-bottom: 20px; /* Separación entre artículos */
+}
+
+/* Asegúrate de que las secciones amarilla y roja se posicionen correctamente */
+#about {
+    background-color: #FFDAB3; /* Color de la Sección Amarilla */
+}
+
+#mental-health {
+    background-color: #9F8383; /* Color de la Sección Roja */
+}
+
+/* Colores de las secciones específicas */
+#about { background-color: #FFE3E3; }
+#specific-diets { background-color: #DBE2EF; }
+#mental-health { background-color: #9F8383; }
+#healthy-recipes { background-color: #3F72AF; color: #FFFFFF; }
+#healthy-lifestyle { background-color: #FFE3E3; }
+#contact { background-color: #DBE2EF; }

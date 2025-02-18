@@ -1,0 +1,110 @@
+/* Estilos para la estructura y disposición de la página */
+/* Contenedor principal */
+.container {
+    width: 100%; /* Ancho completo */
+    position: relative; /* Necesario para el posicionamiento absoluto de las secciones */
+    min-height: 100vh; /* Asegura que ocupe toda la altura */
+}
+
+/* Secciones generales */
+section {
+    padding: 70px 60px; /* Espaciado interno para las secciones */
+    display: flex;
+    justify-content: center; /* Centrado horizontal */
+    align-items: center; /* Centrado vertical */
+    transition: background-color 0.3s ease;
+    height: 500px; /* Altura estándar para secciones */
+}
+
+/* Secciones que ocupan toda la pantalla */
+.full-screen {
+    height: 100vh; /* Altura completa del viewport */
+}
+
+/*  Area seccion distribucion */
+
+/* Estilos específicos para la sección "Acerca de" */
+.about-content {
+    display: flex;
+    align-items: center; /* Centrado vertical */
+    justify-content: space-between; /* Espacio entre texto e imagen */
+    width: 100%;
+    max-width: 1200px; /* Ancho máximo del contenido */
+}
+
+.about-text {
+    flex: 1; /* Ocupa el espacio disponible */
+    margin-right: 40px; /* Espacio entre el texto y la imagen */
+}
+
+.about-image {
+    flex: 1; /* Ocupa el espacio disponible */
+    text-align: right; /* Alinea la imagen a la derecha */
+}
+
+.about-image img {
+    max-width: 100%; /* Asegura que la imagen no exceda el contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+    border-radius: 10px; /* Bordes redondeados para la imagen */
+}
+
+/* Estilos específicos para las secciones horizontales */
+.horizontal-sections {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 70px 60px;
+    background-color: #f9f9f9; /* Color de fondo para estas secciones */
+}
+
+.horizontal-sections h2 {
+    margin-bottom: 40px;
+    font-size: 2.5rem;
+    color: #333;
+}
+
+.horizontal-sections .section-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; /* Permite que los artículos se ajusten en varias filas si es necesario */
+    width: 100%;
+    max-width: 1200px;
+}
+
+.horizontal-sections article {
+    flex: 1 1 200px; /* Flex-grow, flex-shrink, flex-basis */
+    margin: 20px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    max-width: 250px; /* Ancho máximo para cada artículo */
+}
+
+.horizontal-sections article:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.horizontal-sections article h3 {
+    font-size: 1.5rem;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.horizontal-sections article p {
+    font-size: 1rem;
+    color: #777;
+    margin-bottom: 20px;
+}
+
+.horizontal-sections article a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.horizontal-sections article a:hover {
+    color: #007BFF; /* Cambia el color del enlace al pasar el mouse */
+}

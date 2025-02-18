@@ -1,0 +1,122 @@
+/* Estilo global para el cuerpo */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4; /* Fondo claro por defecto */
+    color: #333;
+}
+
+/* Contenedor principal */
+.container {
+    width: 100%;
+    height: 100%;
+    overflow: hidden; /* Evitar barras de desplazamiento innecesarias */
+}
+
+/* Encabezado */
+.header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.navbar ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+.navbar ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.navbar ul li a:hover {
+    color: #f44336; /* Color cuando se pasa el ratón por encima */
+}
+
+/* Estilo para las secciones */
+section {
+    padding: 40px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: background-color 0.3s ease;
+}
+
+/* Secciones completas que ocupan toda la pantalla */
+.full-screen {
+    height: 100vh; /* Ocupa el 100% de la altura de la ventana */
+}
+
+/* Colores de fondo de cada sección */
+#seccion1 { background-color: #f44336; } /* Rojo */
+#seccion2 { background-color: #2196F3; } /* Azul */
+#seccion3 { background-color: #4CAF50; } /* Verde */
+#seccion4 { background-color: #FFEB3B; color: black; } /* Amarillo */
+#seccion5 { background-color: #9C27B0; } /* Morado */
+#seccion6 { background-color: #FF5722; } /* Naranja */
+#seccion7 { background-color: #00BCD4; } /* Cian */
+
+/* Estilos adicionales para mejorar la visualización de texto */
+section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+section p {
+    font-size: 1.2rem;
+    text-align: center;
+    line-height: 1.8;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Agregar un espacio superior al contenido cuando el enlace de navegación esté activo */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Fondo general para la página */
+body {
+    background-color: #e5e5e5;
+}
+
+/* Mejorar la visibilidad de la navegación */
+.navbar ul {
+    background-color: #333;
+    margin-top: 20px;
+    padding: 15px 0;
+}
+
+/* Responsividad: Asegurarse de que la página se vea bien en pantallas pequeñas */
+@media screen and (max-width: 768px) {
+    .navbar ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    section h2 {
+        font-size: 2rem;
+    }
+
+    section p {
+        font-size: 1rem;
+    }
+}

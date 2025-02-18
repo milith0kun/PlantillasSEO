@@ -1,0 +1,44 @@
+/* Estilos para diferentes tamaños de pantalla (responsividad) */
+/* Media Queries para Responsividad */
+/* Para pantallas de hasta 768px de ancho */
+@media (max-width: 768px) {
+    /* Ajustar el tamaño de la fuente y el padding para móviles */
+    .header {
+        height: 60px; /* Reducir altura del encabezado */
+        padding: 0 15px; /* Ajustar padding */
+    }
+    .header h1 {
+        font-size: 1.6em; /* Ajustar tamaño del título */
+    }
+    #main-image h2 {
+        font-size: 2rem; /* Ajustar tamaño del título principal */
+    }
+    .navbar ul {
+        flex-direction: column; /* Apilar elementos de navegación en móviles */
+        gap: 10px; /* Reducir espacio entre elementos */
+    }
+    .navbar ul li {
+        display: block; /* Asegurarse de que los enlaces se apilen */
+    }
+    .navbar ul li a {
+        padding: 10px; /* Ajustar el padding para enlaces verticales */
+    }
+}
+
+/* Para pantallas de hasta 480px de ancho */
+@media (max-width: 480px) {
+    /* Ajustes adicionales para dispositivos muy pequeños */
+    .header h1 {
+        font-size: 1.4em; /* Tamaño más pequeño en móviles */
+    }
+    #main-image h2 {
+        font-size: 1.5rem; /* Tamaño más pequeño en móviles */
+    }
+    .navbar ul {
+        gap: 5px; /* Disminuir espacio */
+    }
+    #main-image {
+        background-size: cover; /* Asegurar que la imagen cubra el contenedor */
+        background-position: center; /* Centrar la imagen */
+    }
+}

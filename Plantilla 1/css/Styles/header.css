@@ -1,0 +1,90 @@
+/* Estilos específicos para el encabezado y la navegación */
+/* Estilos para el encabezado */
+.header {
+    position: sticky; /* Mantiene el encabezado fijo en la parte superior */
+    top: 0;
+    background: #3F72AF; /* Color de fondo del encabezado */
+    height: 80px; /* Altura del encabezado */
+    display: flex;
+    justify-content: space-between; /* Espacio entre elementos */
+    align-items: center; /* Centrar verticalmente */
+    padding: 0 20px; /* Espaciado horizontal */
+    z-index: 1000; /* Asegura la visibilidad sobre otras secciones */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Sombra para dar profundidad */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Transiciones suaves */
+}
+
+/* Cambio de fondo al desplazarse */
+.header.scrolled {
+    background-color: #DBE2EF; /* Color suave cuando se desplaza */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Sombra más intensa al desplazarse */
+}
+
+/* Estilos para el título h1 en el encabezado */
+.header h1 {
+    font-size: 1.8em; /* Tamaño de fuente para el título */
+    font-weight: 700; /* Negrita */
+    color: #EEEEEE; /* Color del título */
+    margin: 0; /* Sin margen */
+    transition: color 0.3s ease; /* Transición para color */
+}
+
+/* Efecto de color al hacer hover en el título */
+.header h1:hover {
+    color: #00ADB5; /* Color de acento al pasar el mouse */
+}
+
+/* Estilos para la barra de navegación */
+.navbar {
+    background-color: #3F72AF; /* Color de la barra de navegación */
+    border-radius: 10px; /* Bordes redondeados */
+    padding: 10px; /* Espaciado interno */
+}
+
+/* Estilos para la lista de navegación */
+.navbar ul {
+    list-style: none; /* Sin estilo de lista */
+    display: flex; /* Flexbox para alineación horizontal */
+    gap: 30px; /* Espacio entre elementos */
+    margin: 0; /* Sin margen */
+    padding: 0; /* Sin padding */
+}
+
+/* Estilos para los enlaces dentro de la lista de navegación */
+.navbar ul li {
+    position: relative; /* Posicionamiento relativo para efectos */
+}
+
+.navbar ul li a {
+    color: #FFFFFF; /* Texto en blanco */
+    text-decoration: none; /* Sin subrayado */
+    font-weight: 600; /* Negrita */
+    padding: 12px 16px; /* Espaciado alrededor de los enlaces */
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease; /* Transiciones suaves */
+    border-radius: 5px; /* Bordes redondeados en enlaces */
+}
+
+/* Efecto de color y transformación al pasar el cursor */
+.navbar ul li a:hover {
+    background-color: rgba(63, 114, 175, 0.4); /* Fondo semitransparente */
+    color: #DBE2EF; /* Color suave al pasar el mouse */
+    transform: translateY(-2px); /* Elevación suave */
+}
+
+/* Estilo de la animación de subrayado */
+.navbar ul li a::after {
+    content: ''; /* Contenido vacío para el subrayado */
+    position: absolute; /* Posicionamiento absoluto */
+    left: 0; /* Alinear a la izquierda */
+    right: 0; /* Alinear a la derecha */
+    bottom: -4px; /* Posición respecto al enlace */
+    height: 2px; /* Altura del subrayado */
+    background: #DBE2EF; /* Color del subrayado */
+    transform: scaleX(0); /* Inicialmente no visible */
+    transition: transform 0.3s ease; /* Transición suave */
+}
+
+/* Anima el subrayado al pasar el cursor */
+.navbar ul li a:hover::after {
+    transform: scaleX(1); /* Muestra el subrayado */
+}

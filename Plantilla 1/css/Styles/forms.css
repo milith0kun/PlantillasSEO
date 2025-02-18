@@ -1,0 +1,48 @@
+/* Estilo de formulario */
+form {
+    display: flex; /* Utilizamos un layout flexible */
+    flex-direction: column; /* Alinear elementos de forma vertical */
+    margin-top: 20px; /* Espaciado superior del formulario */
+}
+
+/* Estilos para inputs y textarea dentro del formulario */
+input, textarea {
+    margin-bottom: 15px; /* Espaciado inferior entre elementos */
+    padding: 12px; /* Espaciado interno */
+    border: 1px solid #ddd; /* Borde estándar */
+    border-radius: 4px; /* Bordes redondeados */
+    transition: border-color 0.3s; /* Transición suave en el borde */
+}
+
+input:focus, textarea:focus {
+    border-color: #00ADB5; /* Color del borde en foco */
+    outline: none; /* Eliminamos el contorno por defecto */
+}
+
+/* Estilo para el botón de envío */
+button {
+    background: linear-gradient(90deg, #F29F58, #DBE2EF); /* Color degradado */
+    color: #FFFFFF; /* Texto del botón */
+    padding: 12px 20px; /* Espaciado interno */
+    border: none; /* Sin borde */
+    border-radius: 8px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor al pasar por encima */
+    font-weight: 600; /* Peso de fuente para el botón */
+    transition: background-color 0.3s, transform 0.2s; /* Transiciones suaves */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para el botón */
+}
+
+button:hover {
+    background: linear-gradient(90deg, #DBE2EF, #F29F58); /* Cambio de fondo al hacer hover */
+    transform: scale(1.05); /* Efecto de aumento al pasar el cursor */
+}
+
+/* Estilo para mensajes de respuesta del formulario */
+#formResponse {
+    display: none; /* Oculto por defecto */
+    background: #C8AAAA; /* Color de fondo claro */
+    border: 1px solid #9F8383; /* Color de borde del mensaje */
+    padding: 15px; /* Espaciado interno */
+    border-radius: 4px; /* Bordes redondeados */
+    margin-top: 20px; /* Espacio superior */
+}

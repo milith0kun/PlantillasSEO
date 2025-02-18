@@ -1,0 +1,10 @@
+/* Animación de desaparición para el encabezado */
+@keyframes disappearHeader {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-100%); }
+}
+
+/* Efecto de desaparición del encabezado después de la segunda sección */
+body.scrolled .header {
+    animation: disappearHeader 0.5s forwards; /* Aplica la animación de desaparición */
+}

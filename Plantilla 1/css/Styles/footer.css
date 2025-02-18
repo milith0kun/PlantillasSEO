@@ -1,0 +1,15 @@
+/* Estilos específicos para el pie de página */
+/* Estilos para el pie de página */
+footer {
+    text-align: center; /* Centramos el texto del pie de página */
+    padding: 20px; /* Espaciado interno */
+    background: #3F72AF; /* Color de fondo del pie de página */
+    color: #FFFFFF; /* Color del texto */
+    border-top: 2px solid #DBE2EF; /* Borde superior del pie de página */
+}
+
+/* Estilos para el texto dentro del pie de página */
+footer p {
+    font-size: 0.9em; /* Tamaño de fuente para texto en el pie */
+    margin: 0; /* Sin márgenes */
+}
